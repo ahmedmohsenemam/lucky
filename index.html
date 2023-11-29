@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <head>
+    <meta charset="UTF-8">
+    <title>Lucky Tours</title>
+</head>
+<body class="bg-dark">
+
+  <nav class=" navbar navbar-expand-lg navbar-dark  bg-dark">
+
+    <img src="pic/ogo.png"   alt="Logo" width="90px" height="50px" class="d-inline-block align-text-top">
+    <div class="container-fluid">
+      
+      <a class="navbar-brand" href="#">Lucky Tours</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Trips
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Cairo</a></li>
+              <li><a class="dropdown-item" href="#">Alex</a></li>
+              <li><a class="dropdown-item" href="#">Ghardha</a></li>
+              <li><a class="dropdown-item" href="#">Aswan</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Sharm</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Login
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Remamber Me</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      
+      </div>
+    </div>
+  </div>
+</div>
+  </nav>  <!-- /////////////////////////////end navbar -->
+
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="pic/1pexels-andreea-ch-1369212.jpg" width="100px" height="850px" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Cairo</h5>
+          <p>We love this city!</p>
+          <button type="button" class="btn btn-dark btn-lg">Visit Us</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="pic/4pexels-axp-photography-16535879.jpg" width="100px" height="850px" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Pyramids</h5>
+          <p>We love this Pyramids!</p>
+          <button type="button" class="btn btn-dark btn-lg">Visit Us</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="pic/3pexels-aviv-perets-3540318.jpg" width="100px" height="850px" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Sharam Elsheikh</h5>
+          <p>We love this Sharam Elsheikh!</p>
+          <button type="button" class="btn btn-dark btn-lg">Visit Us</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> <br> <!-- ///////////////////////  end carsoul -->
+
+
+  <div class="card bg-dark-subtle">
+    <div class="card-header">
+      Why Lucky Tours
+    </div>
+    <div class="card-body">
+      <h5 class="card-title"> Lucky Tours</h5>
+      <p class="card-text">Our reputation and stability in the market for over three decades is a guarantee for being the leading destination management company in the region. Our work reflect experience, creativity and innovation; our team has profound knowledge of the craft and is always committed to deliver the best of quality, reliability and responsibility, not to mention the attention to detail, travel, accommodation, and branding services provided that all is at a competitive price.</p>
+      <a href="#" class="btn btn-dark">Go Tours</a>
+    </div>
+  </div> <br>           <!-- //////////////////// end card -->
+
+  <div class="container text-center">
+    <div class="row row-cols-4">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="pic/11pexels-axp-photography-18991591.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Madinat Coraya</h5>
+            <p class="card-text">(Marsa Alam)</p>
+            <a href="#" class="btn btn-dark">See All</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="pic/88pexels-svetozar-milashevich-7974685.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Madinat Makadi</h5>
+            <p class="card-text">(Hurghada)</p>
+            <a href="#" class="btn btn-dark">See All</a>
+          </div>
+        </div> <br>
+       </div> 
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="pic/66pexels-axp-photography-18991528.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Almaza Bay</h5>
+            <p class="card-text">(Mersa Matruh)</p>
+            <a href="#" class="btn btn-dark">See All</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="pic/22pexels-axp-photography-18991590.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cairo</h5>
+            <p class="card-text">(Nile)</p>
+            <a href="#" class="btn btn-dark">See All</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <br> <!-- //////////////////////// end card-body -->
+
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="pic/img/IMG-20230227-WA0035.jpg" class="card-img-top" alt="..." height="300px">
+          <div class="card-body">
+            <h5 class="card-title">ALEXANDRIA   </h5>
+            <p class="card-text">The bride of the Mediterranean.</p>
+            <a href="#" class="btn btn-primary btn-dark">Know more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="pic/img/IMG-20230227-WA0036.jpg" class="card-img-top" alt="..." height="300px">
+          <div class="card-body">
+            <h5 class="card-title">SHARM EL SHEIKH
+             
+              
+              </h5>
+            <p class="card-text"> Beautiful City in Egypt.</p>
+            <a href="#" class="btn btn-primary btn-dark">know more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="pic/img/IMG-20230227-WA0039.jpg" class="card-img-top" alt="..." height="300px">
+          <div class="card-body">
+            <h5 class="card-title">ASWAN
+             
+              
+              </h5>
+            <p class="card-text"> Nubian City in The South of Egypt.</p>
+            <a href="#" class="btn btn-primary btn-dark">Know more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <br>
+
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="pic/img/IMG-20230227-WA0040.jpg" class="card-img-top" alt="..." height="300px">
+          <div class="card-body">
+            <h5 class="card-title">Porto elsokhna </h5>
+            <p class="card-text">The bride of the Mediterranean.</p>
+            <a href="#" class="btn btn-primary btn-dark">Know more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="pic/img/IMG-20230227-WA0047.jpg" class="card-img-top" alt="..." height="300px">
+          <div class="card-body">
+            <h5 class="card-title">NEW CAPITAL
+              
+              
+             
+              
+              </h5>
+            <p class="card-text"> The New Administrative Capital
+              .</p>
+            <a href="#" class="btn btn-primary btn-dark">know more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="pic/img/zyanya-OMwEkftvQKs-unsplash.jpg" class="card-img-top" alt="..." height="300px">
+          <div class="card-body">
+            <h5 class="card-title">Zezinia
+             
+              
+              </h5>
+            <p class="card-text"> Nubian City in The South of Egypt.</p>
+            <a href="#" class="btn btn-primary btn-dark">Know more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+
+
+  <div class="card" style="width: 18rem;">
+    <img src="pic/5pexels-svetozar-milashevich-7974668.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">OUTGOING</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go Here</a>
+    </div>
+  </div> <br> <br>
+  
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Domstic
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+         Out Going
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+         Visa
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+  </div> <br> <br>
+
+  <div class="footor">
+    <img src="pic/Screenshot 2023-11-29 132800.jpg" alt="footoer" width="100%" height="auto">
+  </div>
+  
+
+ 
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>   
+</body>
+</html>
